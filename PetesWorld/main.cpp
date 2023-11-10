@@ -22,11 +22,11 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-<<<<<<< HEAD
-	std::cout << "Pick a letter from A to B or Z to Z" << std::endl; // change this line each iteration
-=======
-	std::cout << "Pick a letter from A to A or W to Z" << std::endl; // change this line each iteration
->>>>>>> wConor
+
+	std::cout << "Pick a letter from A to B or w to Z" << std::endl; // change this line each iteration
+
+
+
 	std::cin >> letter;
 
 
@@ -62,10 +62,35 @@ int main()
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
 	}	
-<<<<<<< HEAD
 
-	if (letter == 'b ' || letter == 'B')
-=======
+
+	if (letter == 'b' || letter == 'B')
+	{
+		if (region == 1)// america
+		{
+			std::cout << "Belize,Bermuda, Bolivia, Brazil " << std::endl;
+		}
+		if (region == 2)//europ
+		{
+			std::cout << "Belarus,Belgium ,Bosnia and Herzegovina Bulgaria" << std::endl;
+		}
+		if (region == 3)//africaa
+		{
+			std::cout << "Benin,Botswana,Burkina Faso,Burundi, Benin,Botswana,Burkina Faso, BurundiEastern  " << std::endl;
+
+		}
+		if (region == 4)//asia
+		{
+			std::cout << "BahrainArabian Peninsula,Bangladesh,Bhutan, Brunei Darussala " << std::endl;
+
+		}
+		if (region == 5)//rest ow
+		{
+			std::cout << "Bahamas,Barbados " << std::endl;
+
+		}
+	}
+
 	
 	if (letter == 'w' || letter == 'W')
 	{
@@ -93,30 +118,26 @@ int main()
 	}
 
 	if (letter == 'y' || letter == 'Y') // written by Conor
->>>>>>> wConor
 	{
-		if (region == 1)// america
+		if (region == 1)
 		{
-			std::cout << "Belize,Bermuda, Bolivia, Brazil " << std::endl;
+			std::cout << "There are no Ys in the Americas" << std::endl; //Default negative response
 		}
-		if (region == 2)//europ
+		if (region == 2)
 		{
-			std::cout << "Belarus,Belgium ,Bosnia and Herzegovina Bulgaria" << std::endl;
+			std::cout << "There are no Ys in Europe" << std::endl;
 		}
-		if (region == 3)//africaa
+		if (region == 3)
 		{
-			std::cout << "Benin,Botswana,Burkina Faso,Burundi, Benin,Botswana,Burkina Faso, BurundiEastern  " << std::endl;
-
+			std::cout << "There are no Ys in Africa" << std::endl;
 		}
-		if (region == 4)//asia
+		if (region == 4)
 		{
-			std::cout << "BahrainArabian Peninsula,Bangladesh,Bhutan, Brunei Darussala " << std::endl;
-
+			std::cout << "Yemen" << std::endl;
 		}
-		if (region == 5)//rest ow
+		if (region == 5)
 		{
-			std::cout << "Bahamas,Barbados " << std::endl;
-
+			std::cout << "There are no Ys in the rest of the world" << std::endl;
 		}
 	}
 
