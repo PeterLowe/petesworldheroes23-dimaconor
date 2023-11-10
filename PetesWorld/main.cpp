@@ -1,9 +1,8 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// add your name here
-// Conor Foley
-// Dima Atiyeh
+// dima atiyeh
+//  or here
 // estimated time 120 minutes
 // actual time ??
 // version 1.0
@@ -23,8 +22,11 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to A or Y to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to B or Z to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
+
+
+
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
 		if (letter < 'a' || letter > 'z') // not a lower case letter
@@ -56,32 +58,37 @@ int main()
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
 	}	
-	
-	if (letter == 'y' || letter == 'Y') // written by Conor
+
+	if (letter == 'b ' || letter == 'B')
 	{
-		if (region == 1)
+		if (region == 1)// america
 		{
-			std::cout << "There are no Ys in the Americas" << std::endl; //Default negative response
+			std::cout << "Belize,Bermuda, Bolivia, Brazil " << std::endl;
 		}
-		if (region == 2)
+		if (region == 2)//europ
 		{
-			std::cout << "There are no Ys in Europe" << std::endl;
+			std::cout << "Belarus,Belgium ,Bosnia and Herzegovina Bulgaria" << std::endl;
 		}
-		if (region == 3)
+		if (region == 3)//africaa
 		{
-			std::cout << "There are no Ys in Africa" << std::endl;
+			std::cout << "Benin,Botswana,Burkina Faso,Burundi, Benin,Botswana,Burkina Faso, BurundiEastern  " << std::endl;
+
 		}
-		if (region == 4)
+		if (region == 4)//asia
 		{
-			std::cout << "Yemen" << std::endl;
+			std::cout << "BahrainArabian Peninsula,Bangladesh,Bhutan, Brunei Darussala " << std::endl;
+
 		}
-		if (region == 5)
+		if (region == 5)//rest ow
 		{
-			std::cout << "There are no Ys in the rest of the world" << std::endl;
+			std::cout << "Bahamas,Barbados " << std::endl;
+
 		}
 	}
-	
-	
+
+
+
+
 	if (letter == 'z' || letter == 'Z') // written by Pete
 	{
 		if (region == 1)
